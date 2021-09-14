@@ -36,6 +36,26 @@ function showTime(){
     sec = sec < 10 ? "0" + sec : sec;
 
     let clock_time = hr+":"+min+":"+sec+" "+am_pm+"<br>"+current_time.toDateString();
-    
+
     document.getElementById('clock').innerHTML = clock_time;
+}
+
+// calculator
+let cal_input = document.getElementById('cal_input');
+let expression = ''
+
+function press_btn(val){
+    console.log(val);
+    expression += val;
+    cal_input.value = expression;
+}
+
+function press_equal(){
+    cal_input.value = eval(expression);
+    expression = '';
+}
+
+function press_clr(){
+    expression = '';
+    cal_input.value = expression;
 }

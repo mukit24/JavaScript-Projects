@@ -32,9 +32,42 @@
         <div class="digital_clock">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h5 class="alert alert-dark text-center py-1 font-weight-bold">Digital Clock</h5>
-                    <h4 id="clock_msg" class="text-center text-primary font-weight-bold"></h4>
-                    <div id="clock"></div>
+                    <h4 class="alert alert-dark text-center py-1 font-weight-bold">Digital Clock</h4>
+                    <h4 id="clock_msg"></h4>
+                    <h4 id="clock"></h4>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <div class="calculator">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h4 class="alert alert-dark text-center py-1 font-weight-bold">Calculator</h4>
+                    <div class="calculator-main">
+                        <input id="cal_input" readonly placeholder="0">
+                        <button class="btn btn-dark" onclick="press_btn(0)">0</button>
+                        <button class="btn btn-dark"  onclick="press_btn(1)">1</button>
+                        <button class="btn btn-dark" onclick="press_btn(2)">2</button>
+                        <button class="btn btn-warning" onclick="press_btn('+')">+</button>
+                        <br>
+                        <button class="btn btn-dark" onclick="press_btn(3)">3</button>
+                        <button class="btn btn-dark" onclick="press_btn(4)">4</button>
+                        <button class="btn btn-dark" onclick="press_btn(5)">5</button>
+                        <button class="btn btn-warning" onclick="press_btn('-')">-</button>
+                        <br>
+                        <button class="btn btn-dark" onclick="press_btn(6)">6</button>
+                        <button class="btn btn-dark"  onclick="press_btn(7)">7</button>
+                        <button class="btn btn-dark"  onclick="press_btn(8)">8</button>
+                        <button class="btn btn-warning" onclick="press_btn('*')">*</button>
+                        <br>
+                        <button class="btn btn-dark" onclick="press_btn(9)">9</button>
+                        <button class="btn btn-success" onclick="press_equal()">=</button>
+                        <button class="btn btn-danger" onclick="press_clr()">Clear</button>
+                        <button class="btn btn-warning" onclick="press_btn('/')">/</button>
+                        <br>
+                    </div>
+                    
                 </div>
             </div>
             

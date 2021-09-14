@@ -7,11 +7,49 @@ body{
     font-size: 28px;
 }
 
+.row .alert{
+    text-transform: uppercase;
+}
+
 #clock{
     text-align: center;
-    font-size: 27px;
     font-weight: 800;
-    border: 1px solid grey;
     border-radius: 5px;
-    background-color: lightskyblue;
+    box-shadow: 8px 8px 5px grey;
+    background-color: rgb(188, 215, 231);
+    padding: 12px 0px;
+}
+
+#clock_msg{
+    text-align: center;
+    color: darkgreen;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.calculator-main{
+    text-align: center;
+}
+.calculator-main .btn{
+    padding: 8px;
+    margin: 4px 0px;
+    width: 70px;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+}
+
+#cal_input{
+    display: block;
+    margin: 5px auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    background-color: honeydew;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
 }
