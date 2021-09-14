@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.title i{
+    font-size: 28px;
+}
+
+#clock{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 800;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: lightskyblue;
+}
