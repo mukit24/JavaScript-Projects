@@ -53,3 +53,15 @@ body{
     font-weight: 700;
     text-align: right;
 }
+
+.word-counter textarea{
+    background-color: aliceblue;
+    outline: none;
+}
+
+.word-counter .result{
+    display: none;
+}
+#wc_table_body{
+    font-weight: 700;
+}

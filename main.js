@@ -59,3 +59,43 @@ function press_clr(){
     expression = '';
     cal_input.value = expression;
 }
+
+//word counter
+function countWords(e){
+    e.preventDefault();
+    let words = document.getElementById("word_counter_input").value;
+    let result = document.getElementById("wc_result");
+    result.style.display = 'block';
+    console.log(words);
+    console.log(typeof(words));
+
+    let num_of_words = words.match(/\S+/g).length;
+    console.log(num_of_words);
+    document.getElementById('num_of_words').innerHTML = num_of_words;
+
+    const myArrWords = words.split(/\s+/g);
+    console.log(myArrWords);
+    const objectWords = {};
+    for(let x of myArrWords)
+    {
+        if(x.length in objectWords){
+            objectWords[x.length] += 1;
+        }else{
+            objectWords[x.length] = 1;
+        }
+    }
+    console.log(objectWords);
+     
+    let output = ''
+    for(let key in objectWords){
+        output += '<tr><td>'+key+'</td><td>'+objectWords[key]+'</td></tr>';
+    }
+    document.getElementById('wc_table_body').innerHTML = output;
+    
+}
+
+function wcResultReset(){
+    console.log('reset');
+    let result = document.getElementById("wc_result");
+    result.style.display = 'none';
+}

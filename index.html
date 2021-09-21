@@ -72,6 +72,39 @@
             </div>
             
         </div>
+        <br>
+        <div class="word-counter">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h4 class="alert alert-dark text-center py-1 font-weight-bold">Word Counter</h4>
+                    <form onsubmit="countWords(event)">
+                        <div class="form-group">
+                          <textarea class="form-control" rows="3" id="word_counter_input" name="text" placeholder="Write Something..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-info btn-sm">Count Words</button>
+                            <button type="reset" class="btn btn-danger btn-sm" onclick="wcResultReset()">Reset</button>
+                        </div>
+                    </form>
+                    <br>
+                    <div class="result" id="wc_result">
+                        <h6 class="alert alert-success text-center py-1 font-weight-bold">Total Words: <span id="num_of_words"></span></h6>
+                        <table class="table table-success table-hover">
+                            <thead>
+                              <tr>
+                                <th>Word Length</th>
+                                <th>Words Count</th>
+                              </tr>
+                            </thead>
+                            <tbody id="wc_table_body">
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
     </div>
     <script src="main.js"></script>
 </body>
